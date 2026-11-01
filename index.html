@@ -80,9 +80,23 @@ body{margin:0;background:radial-gradient(ellipse at top,#3b2b1d 0,#17120e 70%);c
 .modal .choices{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 .footer{text-align:center;color:#8f8069;font:11px Arial,sans-serif;margin:25px 0 0}
 @media(max-width:850px){.track-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}\n@media(max-width:600px){body{padding:12px 8px 30px}.screen-main .song{font-size:clamp(12px,3vw,20px)}.screen-main .status{margin-top:3px}.explicit-control{padding:3px 6px;gap:4px}.led{width:7px;height:7px}.track-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.track{grid-template-columns:55px 1fr;gap:7px;padding:7px}.track img{width:55px;height:55px}.track .name{font-size:12px}}
+
+/* Full-page radio presentation and persistent return sign */
+body{min-height:100vh;min-height:100svh;padding:26px 18px 54px}
+.wrap{width:100%;max-width:1440px}
+.radio-shell{max-width: min(1200px, 100%)}
+.intro{padding:0 112px}
+.exit-home{position:fixed;z-index:250;top:14px;right:16px;display:block;width:clamp(62px,7vw,104px);line-height:0;filter:drop-shadow(0 4px 8px #000b);transition:transform .16s ease,filter .16s ease}
+.exit-home img{display:block;width:100%;height:auto}
+.exit-home:hover{transform:scale(1.06);filter:drop-shadow(0 6px 12px #000)}
+.exit-home:focus-visible{outline:3px solid #ffe6a0;outline-offset:5px;border-radius:8px}
+@media(max-width:600px){body{padding:88px 8px 30px}.intro{padding:0 8px}.exit-home{top:10px;right:10px;width:64px}}
 </style>
 </head>
 <body>
+<a class="exit-home" href="https://gremlinwranglergrotto.blogspot.com/" aria-label="Exit radio and return to the Gremlin Grotto blog" title="Back to the Grotto">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNMfUIz5K_4DJqfWI2bNLQfAVwTtXN611rRv9dpXZfVVyGyP9U5Ezk9s1C07Nez4w5IlJAjv-9VgWFCO7BGzh_Kn0PLRwmjW5fhe63Kij576EMAH-n0r-JjGcBSdEFns9F4yGKz_q1pfk4mWeBuRNgk91R-QctDmPFkLErD9dw0Prffw/s1600/TGW%20Exit%20crop.png" alt="Exit to the Gremlin Grotto blog">
+</a>
 <div class="wrap">
   <header class="intro">
     <h1>Gremlin Grotto Radio</h1>
